@@ -15,8 +15,7 @@
     "@unsass/breakpoint": "^2.3.0",
     "axios": "^1.4.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-prism": "^4.3.2"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
