@@ -1,0 +1,25 @@
+.search-container {
+    width: 100%;
+    margin-top: 2.25rem;
+}
+
+.search-form {
+    position: relative;
+    width: 100%;
+}
+
+.search-icon {
+    position: absolute;
+    width: 20.05px;
+    height: 20px;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-button {
+    position: absolute;
+    right: .4375rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
