@@ -5,7 +5,7 @@ import '../../assets/css/Search.css';
 
 import Glass from '../../assets/svg/magnifying-glass.svg';
 
-const Search = ( { searchUser }) => {
+const Search = ( { searchUser, error }) => {
     const { theme } = useContext(ThemeContext);
     const [inputValue, setInputValue] = useState('');
 
@@ -20,6 +20,7 @@ const Search = ( { searchUser }) => {
                 <input className={theme} type="text" name="username" id="username" placeholder='Search Github username...' value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
                 <img className="search-icon" src={Glass} />
                 <button className='search-button' type='submit'>Search</button>
+                <p className={`not-found ${error === true ? 'not-found__visible' : ''}`}>No Results</p>
             </form>
         </section>
     );

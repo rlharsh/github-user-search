@@ -11,6 +11,7 @@
   --color-dark-dark-text: #FFFFFF;
   --color-dark-background: #141D2F;
   --color-dark-dark-background: #1E2A47;
+  --color-red: #F74646;
 }
 
 body {
@@ -35,6 +36,16 @@ body.dark {
   display: flex;
   flex-direction: column;
   padding: 1.9375rem 1.5rem;
+  gap: 1rem;
+  max-width: 730px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .app-container {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 h1.light {
@@ -65,4 +76,51 @@ input.dark {
   font-size: 0.875rem;
   padding: 0.78125rem 1rem;
   cursor: pointer;
+}
+.search-button:hover {
+  background-color: #60ABFF;
+}
+
+.card-container.dark {
+  background-color: var(--color-dark-dark-background);
+}
+
+.card-container.light {
+  background-color: var(--color-light-dark-background);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.inner-div.dark {
+  background-color: var(--color-dark-background);
+}
+
+.inner-div.light {
+  background-color: var(--color-light-background);
+}
+
+a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active, a:visited {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+.blog-link.dark {
+  color: #FFF;
+}
+
+.blog-link.light {
+  color: #4B6A9B;
+}
+
+.blog-link {
+  text-decoration: none;
+}
+.blog-link:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=app.css.map */

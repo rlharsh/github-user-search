@@ -1,6 +1,6 @@
 .search-container {
   width: 100%;
-  margin-top: 2.25rem;
+  margin-top: 1.25rem;
 }
 
 .search-form {
@@ -22,4 +22,17 @@
   right: 0.4375rem;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.not-found {
+  position: absolute;
+  color: #F74646;
+  text-align: right;
+  right: 8.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+.not-found__visible {
+  display: inline;
 }/*# sourceMappingURL=Search.css.map */
