@@ -16,7 +16,7 @@ const Search = ( { searchUser, error }) => {
 
     return (
         <section className={`search-container  ${theme === 'light' ? 'light' : ''}`} aria-label='Search Container' role='search'>
-            <form className="search-form" onSubmit={handleSubmit} role='form'>
+            <form className="search-form" onSubmit={handleSubmit}>
                 <input className={theme} type="text" role='textbox' aria-label='Search' name="username" id="username" placeholder='Search Github username...' value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
                 <img className="search-icon" src={Glass} alt='Search Icon' />
                 <button className='search-button' type='submit' role='button' aria-label='Search Button'>Search</button>
