@@ -25,7 +25,7 @@ const Card = ({user}) => {
     }
 
     return (
-        <div className={`card-container ${theme === "dark" ? 'dark' : 'light'}`}>
+        <main className={`card-container ${theme === "dark" ? 'dark' : 'light'}`}>
             <section className='user-card'>
                 <div className='user-card__header'>
                     <img className='user-card__header__image' src={user.avatar_url} alt={`${user.login} avatar`} />
@@ -92,7 +92,7 @@ const Card = ({user}) => {
                     </div>
                 </div>
             </section>
-        </div>
+        </main>
     );
 }
 
