@@ -37,9 +37,6 @@ function App() {
 
   async function fetchGithubUser(username) {
     const response = await fetch(`https://api.github.com/users/${username}`, {
-      headers: {
-        Authorization: `token ${token}`,
-      },
     });
 
     const data = await response.json();
