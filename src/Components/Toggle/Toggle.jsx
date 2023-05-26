@@ -9,10 +9,10 @@ const Toggle = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
 
     return (
-        <div className='toggle-container' onClick={toggleTheme}>
-            <h4 className={theme}>{ theme.toUpperCase() }</h4>
+        <div className='toggle-container' onClick={toggleTheme} role="theme-toggle">
+            <p className={theme}>{ theme.toUpperCase() }</p>
             {
-                theme === 'dark' ? <img src={Sun} alt='Switch to light theme.' /> : <img src={Moon} alt='Switch to dark theme.' />
+                theme === 'dark' ? <img src={Sun} alt='Switch to light theme.' aria-label='Theme toggle switch.' /> : <img src={Moon} alt='Switch to dark theme.' />
             }
         </div>
     );

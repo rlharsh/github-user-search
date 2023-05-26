@@ -25,13 +25,13 @@ const Card = ({user}) => {
     }
 
     return (
-        <main className={`card-container ${theme === "dark" ? 'dark' : 'light'}`} aria-label='User Information'>
-            <section className='user-card'>
+        <main className={`card-container ${theme === "dark" ? 'dark' : 'light'}`} aria-label='User Information' role='main'>
+            <section className='user-card' role=''>
                 <div className='user-card__header'>
-                    <img className='user-card__header__image' src={user.avatar_url} alt={`${user.login} avatar`} />
+                    <img className='user-card__header__image' src={user.avatar_url} alt={`${user.login}'s avatar`} />
                     <div className='user-details'>
                         <h3>{user.name === null ? 'Not available' : user.name}</h3>
-                        <a href="#" target='_blank' aria-label='A link that goes nowhere.'>{user.company === null ? 'Not available' : user.company}</a>
+                        <a href="#" target='_blank' aria-label='A link that opens up a blank page.'>{user.company === null ? 'Not available' : user.company}</a>
                         <p>Joined {formatDate(user.created_at)}</p>
                     </div>
                 </div>
