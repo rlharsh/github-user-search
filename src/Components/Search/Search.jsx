@@ -17,9 +17,9 @@ const Search = ( { searchUser, error }) => {
     return (
         <section className={`search-container  ${theme === 'light' ? 'light' : ''}`} aria-label='Search Container' role='search'>
             <form className="search-form" onSubmit={handleSubmit}>
-                <input className={theme} type="text" role='textbox' aria-label='Search' name="username" id="username" placeholder='Search Github username...' value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+                <input className={theme} type="text" aria-label='Enter username to search for.' name="username" id="username" placeholder='Search Github username...' value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
                 <img className="search-icon" src={Glass} alt='Search Icon' />
-                <button className='search-button' type='submit' role='button' aria-label='Search Button'>Search</button>
+                <button className='search-button' type='submit' aria-label='Search Button'>Search</button>
                 <p className={`not-found ${error === true ? 'not-found__visible' : ''}`}>No Results</p>
             </form>
         </section>
